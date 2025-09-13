@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoClickerUniversal - Покупка</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Шапка -->
+  <header class="text-center py-10">
+    <h1 class="text-4xl font-bold">⚡ AutoClickerUniversal — Покупка</h1>
+    <p class="text-gray-400 mt-2">Узнай особенности перед покупкой</p>
+  </header>
+
+  <!-- Особенности -->
+  <section class="max-w-3xl mx-auto bg-gray-800 rounded-2xl shadow-lg p-8">
+    <h2 class="text-2xl font-semibold mb-6">Особенности:</h2>
+    <ul class="list-decimal list-inside space-y-3 text-lg text-gray-300">
+      <li>Работает на Windows 10 (64 bit и 32 bit).</li>
+      <li>Потребляет мало оперативной памяти.</li>
+      <li>Подходит для Roblox и Minecraft.</li>
+	  <li>АвтоКликер имеет Ключ Систему.<li>
+    </ul>
+
+    <!-- Telegram -->
+    <div class="text-center mt-10">
+      <p class="text-lg">Оформить подписку можно в Telegram:</p>
+      <a href="https://t.me/V1ntage12" target="_blank" 
+         class="inline-block mt-4 px-8 py-3 bg-blue-500 hover:bg-blue-400 rounded-xl font-medium shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+         📩 Мой Telegram
+      </a>
+    </div>
+
+    <!-- Вернуться назад -->
+    <div class="text-center mt-8">
+      <a href="index.html" 
+         class="inline-block px-6 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg shadow-md transition transform hover:-translate-y-1 hover:shadow-lg">
+         ⬅ Вернуться назад
+      </a>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="text-center text-gray-500 py-6 mt-10 border-t border-gray-700">
+    © 2025 AutoClicker. Все права защищены.
+  </footer>
+
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+</body>
+</html>
